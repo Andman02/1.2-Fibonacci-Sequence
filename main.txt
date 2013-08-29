@@ -6,6 +6,7 @@ public class Fibonacci
   {
     Scanner keyInput = new Scanner(System.in);
     int arraySize;
+    String result = "The Sequence is: ";
     
     System.out.print("Enter a number(greater than 2) ");
     arraySize = keyInput.nextInt();
@@ -15,9 +16,20 @@ public class Fibonacci
       System.out.print("Enter a number(greater than 2) ");
       arraySize = keyInput.nextInt();
     }
+    
     int [] sequence = new int[arraySize];
     sequence[0] = 0;
     sequence[1] = 1;
+    
+    for (int i = 2; i < sequence.length; i++)
+    {
+      sequence[i] = sequence[n-1] + sequence[n-2];
+    }
+    
+    for (j = 0; j < sequence.length; i++)
+    {
+      result += sequence[i]
+    }
     
     
   }
