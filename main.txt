@@ -33,6 +33,6 @@ public class Fibonacci
         result += ",";
     }
     
-    System.out.prinln(result);
+    System.out.println(result);
   }
 }
