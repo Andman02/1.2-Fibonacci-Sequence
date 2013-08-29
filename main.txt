@@ -1,1 +1,24 @@
-fdsalfvdsafdsa
+import java.util.Scanner;
+
+public class Fibonacci
+{
+  public static void main( String args[] )
+  {
+    Scanner keyInput = new Scanner(System.in);
+    int arraySize;
+    
+    System.out.print("Enter a number(greater than 2) ");
+    arraySize = keyInput.nextInt();
+    
+    while (arraySize < 2)
+    {
+      System.out.print("Enter a number(greater than 2) ");
+      arraySize = keyInput.nextInt();
+    }
+    int [] sequence = new int[arraySize];
+    sequence[0] = 0;
+    sequence[1] = 1;
+    
+    
+  }
+}
