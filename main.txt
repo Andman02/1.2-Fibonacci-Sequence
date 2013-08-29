@@ -32,5 +32,7 @@ public class Fibonacci
       if (j != sequence.length - 1)
         result += ",";
     }
+    
+    System.out.prinln(result);
   }
 }
