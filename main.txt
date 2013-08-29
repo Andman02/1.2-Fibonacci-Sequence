@@ -8,12 +8,12 @@ public class Fibonacci
     int arraySize;
     String result = "The Sequence is: ";
     
-    System.out.print("Enter a number(greater than 2) ");
+    System.out.print("Enter a number(>= 2): ");
     arraySize = keyInput.nextInt();
     
     while (arraySize < 2)
     {
-      System.out.print("Enter a number(greater than 2) ");
+      System.out.print("Enter a number(>= 2): ");
       arraySize = keyInput.nextInt();
     }
     
@@ -23,13 +23,14 @@ public class Fibonacci
     
     for (int i = 2; i < sequence.length; i++)
     {
-      sequence[i] = sequence[n-1] + sequence[n-2];
+      sequence[i] = sequence[i-1] + sequence[i-2];
     }
     
-    for (j = 0; j < sequence.length; i++)
+    for (j = 0; j < sequence.length; j++)
     {
       result += sequence[i];
-      result += ",";
+      if (j != sequence.length - 1)
+        result += ",";
     }
     
     
