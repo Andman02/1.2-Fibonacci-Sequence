@@ -28,7 +28,7 @@ public class Fibonacci
     
     for (j = 0; j < sequence.length; j++)
     {
-      result += sequence[i];
+      result += sequence[j];
       if (j != sequence.length - 1)
         result += ",";
     }
